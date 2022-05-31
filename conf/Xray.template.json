@@ -62,7 +62,7 @@
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": false,
-                    "path": "${Vmess_Path}"
+                    "path": "${Vmess_Path}",
                     "maxEarlyData": 2048,
                     "earlyDataHeaderName":"Sec-WebSocket-Protocol"
                 },
