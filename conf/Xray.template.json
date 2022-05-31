@@ -53,12 +53,21 @@
                 ],
                 "disableInsecureEncryption": false
             },
+            "sniffing": {
+               "enabled": true,
+               "destOverride": ["http", "tls"]
+            },
             "streamSettings": {
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": false,
                     "path": "${Vmess_Path}"
+                    "maxEarlyData": 2048,
+                    "earlyDataHeaderName":"Sec-WebSocket-Protocol"
+                },
+                "tlsSettings": {
+                  "allowInsecure": false
                 }
             }
         }
