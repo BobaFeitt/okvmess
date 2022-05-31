@@ -67,7 +67,7 @@
                     "earlyDataHeaderName":"Sec-WebSocket-Protocol"
                 },
                 "tlsSettings": {
-                  "allowInsecure": false
+                  "allowInsecure": true
                 }
             }
         }
